@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Consciência Ambiental</title>
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1 class="titulo-site">🌿Consciência Ambiental</h1>
+    </div>
+
+    <button class="hamburger" tabindex="0" role="button" aria-label="Abrir menu de navegação">☰</button>
+    <button id="btnContraste" aria-label="Ativar modo alto contraste">Alto Contraste</button>
+
+    <nav class="menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="educacao.html">Educação Ambiental</a></li>
+            <li><a href="reciclagem.html">Reciclagem</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="apoiador.html">Apoiador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="imagens/cadastro.png" alt="Imagem de cadastro" style="width: 100%; height: auto;" />
+
+  <main class="container">
+    <section class="intro">
+      <h2>Junte-se a nós!</h2>
+      <p>Preencha o formulário abaixo para se tornar um voluntário e participar das nossas ações ambientais.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Formulário de Cadastro</h3>
+        <form onsubmit="enviarCadastro(event)">
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required><br><br>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br><br>
+          <input type="text" id="cpf" name="cpf" placeholder="CPF (000.000.000-00)" maxlength="14" required><br><br>
+          <input type="text" id="telefone" name="telefone" placeholder="Telefone ((00) 00000-0000)" maxlength="15" required><br><br>
+          <input type="date" id="nascimento" name="nascimento" required><br><br>
+          <input type="text" id="endereco" name="endereco" placeholder="Endereço completo" required><br><br>
+          <input type="text" id="cep" name="cep" placeholder="CEP (00000-000)" maxlength="9" required><br><br>
+          <input type="text" id="cidade" name="cidade" placeholder="Cidade" required><br><br>
+          <input type="text" id="estado" name="estado" placeholder="Estado" required><br><br>
+          <input type="text" id="interesse" name="interesse" placeholder="Área de interesse (ex: reciclagem)" required><br><br>
+          <button type="submit" class="button">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Perfis de Usuário na Plataforma</h2>
+      <p>Conheça como cada tipo de usuário pode interagir com a ONG:</p>
+
+      <h3>👩‍💼 Administrador da ONG</h3>
+      <ul>
+        <li>Gerenciar informações institucionais</li>
+        <li>Cadastrar e editar projetos</li>
+        <li>Acompanhar métricas de engajamento</li>
+        <li>Gerenciar voluntários e doações</li>
+      </ul>
+
+      <h3>🙋 Voluntário</h3>
+      <ul>
+        <li>Descobrir oportunidades de voluntariado</li>
+        <li>Candidatar-se a projetos</li>
+        <li>Acompanhar histórico de participação</li>
+        <li>Compartilhar experiências</li>
+      </ul>
+
+      <h3>💚 Doador/Apoiador</h3>
+      <ul>
+        <li>Conhecer projetos e impactos</li>
+        <li>Realizar doações on-line</li>
+        <li>Acompanhar aplicação de recursos</li>
+        <li>Receber relatórios de transparência</li>
+      </ul>
+
+      <h3>👀 Visitante</h3>
+      <ul>
+        <li>Conhecer a organização e seus projetos</li>
+        <li>Acessar informações de contato</li>
+        <li>Visualizar galeria de atividades</li>
+        <li>Compartilhar conteúdo em redes sociais</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Consciência Ambiental | Desenvolvido por Maiara</p>
+  </footer>
+</body>
+</html>
