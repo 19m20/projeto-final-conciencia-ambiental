@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Consciência Ambiental</title>
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+   <h1 class="titulo-site">🌿Consciência Ambiental</h1> 
+    </div>
+
+    <button class="hamburger" tabindex="0" role="button" aria-label="Abrir menu de navegação">☰</button>
+
+    <button id="btnContraste" aria-label="Ativar modo alto contraste">Alto Contraste</button>
+
+    <nav class="menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="educacao.html">Educação Ambiental</a></li>
+            <li><a href="reciclagem.html">Reciclagem</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="apoiador.html">Apoiador</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Imagem de destaque -->
+  <img src="imagens/blog.png" alt="Imagem do Blog" style="width: 100%; height: auto;">
+
+  <main class="container">
+    <section class="posts">
+      <div class="post card">
+        <h2>♻️ Oficina de Reciclagem nas Escolas</h2>
+        <p>Levamos conhecimento sobre separação de resíduos e reaproveitamento para alunos do ensino fundamental. A oficina foi interativa e envolveu mais de 200 crianças.</p>
+      </div>
+
+      <div class="post card">
+        <h2>📊 Relatório de Impacto 2025 disponível</h2>
+        <p>Publicamos nosso relatório anual com todos os indicadores de impacto, resultados dos projetos e metas para o próximo ano.</p>
+      </div>
+
+      <p><em>Mais conteúdos em breve...</em></p>
+    </section>
+
+    <section class="newsletter card">
+      <h2>Assine nossa Newsletter</h2>
+      <p>Receba atualizações sobre nossos projetos, eventos e ações sustentáveis diretamente no seu e-mail.</p>
+      <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" class="button" value="Inscrever-se">
+      </form>
+      <p><em>Este formulário é apenas ilustrativo e não envia dados reais.</em></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Consciência Ambiental | Desenvolvido por Maiara</p>
+  </footer>
+</body>
+</html>
