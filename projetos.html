@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Consciência Ambiental</title>
+  <script src="js/" defer></script>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1 class="titulo-site">🌿Consciência Ambiental</h1> 
+    </div>
+
+    <button class="hamburger" tabindex="0" role="button" aria-label="Abrir menu de navegação">☰</button>
+
+    <button id="btnContraste" aria-label="Ativar modo alto contraste">Alto Contraste</button> 
+
+    <nav class="menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li class="dropdown">
+          <a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="educacao.html">Educação Ambiental</a></li>
+            <li><a href="reciclagem.html">Reciclagem</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="apoiador.html">Apoiador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Imagem de destaque -->
+  <img src="imagens/voluntario.png" alt="Imagem de voluntariado" style="width: 100%; height: auto;">
+
+  <main class="container">
+    <section class="intro">
+      <h2>Conheça nossos projetos sustentáveis</h2>
+      <p>Atuamos em comunidades, escolas e áreas verdes com ações que promovem o cuidado com o meio ambiente e o engajamento social.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Recicla São Paulo</h3>
+        <p>Projeto de coleta seletiva e educação ambiental em comunidades urbanas.</p>
+        <button class="button" onclick="solicitarAtividade('Recicla São Paulo')">Participar</button>
+      </div>
+
+      <div class="card">
+        <h3>Educação Verde nas Escolas</h3>
+        <p>Oficinas e palestras sobre sustentabilidade para alunos do ensino fundamental.</p>
+        <button class="button" onclick="solicitarAtividade('Educação Verde nas Escolas')">Participar</button>
+      </div>
+
+      <div class="card">
+        <h3>Mutirão de Limpeza de Rios</h3>
+        <p>Voluntários se reúnem para limpar margens de rios e córregos locais.</p>
+        <button class="button" onclick="solicitarAtividade('Mutirão de Limpeza de Rios')">Participar</button>
+      </div>
+
+      <div class="card">
+        <h3>Plantação de Árvores</h3>
+        <p>Plantio de árvores nativas em áreas urbanas e rurais para recuperação ambiental.</p>
+        <button class="button" onclick="solicitarAtividade('Arboriza Santa Branca')">Participar</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Indicadores de Impacto e Resultados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Indicador</th>
+            <th>Descrição</th>
+            <th>Exemplo de Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Árvores plantadas</td>
+            <td>Quantidade de mudas nativas plantadas</td>
+            <td>5.200 mudas</td>
+          </tr>
+          <tr>
+            <td>Pessoas beneficiadas</td>
+            <td>Número de participantes em ações e oficinas</td>
+            <td>3.000 pessoas</td>
+          </tr>
+          <tr>
+            <td>Escolas atendidas</td>
+            <td>Instituições que receberam projetos educativos</td>
+            <td>22 escolas</td>
+          </tr>
+          <tr>
+            <td>Quilômetros de rios limpos</td>
+            <td>Extensão dos trechos limpos em campanhas ambientais</td>
+            <td>12 km</td>
+          </tr>
+          <tr>
+            <td>Voluntários engajados</td>
+            <td>Pessoas que atuaram diretamente nos projetos</td>
+            <td>58 voluntários</td>
+          </tr>
+          <tr>
+            <td>Toneladas de resíduos reciclados</td>
+            <td>Volume de materiais reaproveitados</td>
+            <td>4,5 toneladas</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Galeria de Projetos</h2>
+      <div class="gallery">
+        <img src="imagens/projetoone.png" alt="Projeto 1" width="150">
+        <img src="imagens/projetotwo.png" alt="Projeto 2" width="150">
+        <img src="imagens/projetotree.png" alt="Projeto 3" width="150">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Consciência Ambiental | Desenvolvido por Maiara</p>
+  </footer>
+</body>
+</html>
+
