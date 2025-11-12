@@ -1,0 +1,68 @@
+.button {
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 6px;
+  font-size: var(--font-md);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-primary);
+}
+
+.card {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 8px;
+  padding: var(--space-3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: var(--space-1);
+  margin-bottom: var(--space-2);
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 4px;
+  font-size: var(--font-sm);
+  background-color: var(--color-neutral-100);
+  color: var(--color-text);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.alert {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  padding: var(--space-2);
+  border-radius: 4px;
+  margin-bottom: var(--space-2);
+}
+
+.toast {
+  position: fixed;
+  bottom: var(--space-2);
+  right: var(--space-2);
+  background: var(--color-primary);
+  color: var(--color-text);
+  padding: var(--space-2);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-neutral-900);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: var(--font-xs);
+  margin-right: var(--space-1);
+}

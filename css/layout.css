@@ -1,0 +1,63 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Container principal */
+main, .container, .conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título principal */
+h1, .titulo-principal {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 20px;
+}
+
+/* Seções de conteúdo */
+section, .bloco, .sessao {
+  margin-bottom: 32px;
+}
+
+/* Parágrafos e textos */
+p, li, span {
+  font-size: 1rem;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h1, .titulo-principal {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+
+  main, .container, .conteudo {
+    padding: 16px;
+  }
+
+  section, .bloco, .sessao {
+    margin-bottom: 24px;
+  }
+}

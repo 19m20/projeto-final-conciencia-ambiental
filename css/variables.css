@@ -1,0 +1,50 @@
+:root {
+  /* Paleta de Cores Naturais */
+  --color-primary: #2e7d32;       /* Verde floresta */
+  --color-secondary: #66bb6a;     /* Verde claro */
+  --color-accent: #a5d6a7;        /* Verde suave */
+  --color-neutral-100: #f1f8e9;   /* Fundo claro */
+  --color-neutral-200: #c8e6c9;   /* Verde pálido */
+  --color-neutral-300: #aed581;   /* Verde médio */
+  --color-neutral-800: #33691e;   /* Verde escuro */
+  --color-neutral-900: #1b5e20;   /* Verde profundo */
+
+  /* Cores principais para contraste */
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-primary: #2e7d32;
+
+  /* Tipografia */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+
+  /* Espaçamento */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* Fontes */
+  --font-family: 'Segoe UI', sans-serif;
+}
+
+/* Modo escuro automático */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #121212;
+    --color-text: #ffffff;
+    --color-primary: #00ff88;
+  }
+}
+
+/* Modo alto contraste manual */
+.high-contrast {
+  --color-background: #000000;
+  --color-text: #ffff00;
+  --color-primary: #00ffff;
+}
