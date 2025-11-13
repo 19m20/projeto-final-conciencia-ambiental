@@ -47,5 +47,8 @@ Maiara Alves
 
 ---
 
+🔗 Acesse o site Você pode visualizar o projeto online através do GitHub Pages:
+
+👉 [Clique aqui para visitar o site](https://19m20.github.io/projeto-final-conciencia-ambiental/)
 
 
